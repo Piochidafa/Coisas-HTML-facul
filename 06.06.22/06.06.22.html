@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .inativo {
+            position: relative;
+            animation: movimento 5s;
+            -webkit-animation: movimento 5s;
+            -moz-animation: movimento 5s;
+        }
+
+        @keyframes movimento{
+
+            from{top:0px;}
+            to {top: 200px; opacity:0}
+
+        }
+
+       
+
+        .alpha{
+
+            color: green;
+
+
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    
+    <button onclick="inicio()">Ativo</button>
+    
+    <button onclick="servico()">Inativo</button>
+    
+    <div id="inicio_servico" class="ativo">
+
+        <h2 class="alpha">Robson2</h2>
+
+
+    </div>
+
+    <div id="inicio_conteudo" class="inativo">
+
+        <h2>Almeida</h2>
+
+    
+
+
+
+
+    <script>
+
+        function inicio() {
+
+
+            inicio_conteudo.classList.add("ativo")
+            inicio_conteudo.classList.remove("inativo")
+            inicio_servico.classList.remove("ativo")
+            inicio_servico.classList.add("inativo")
+
+
+
+        }
+
+        function servico(){
+
+            inicio_conteudo.classList.add("inativo")
+            inicio_conteudo.classList.remove("ativo")
+            inicio_servico.classList.remove("inativo")
+            inicio_servico.classList.add("ativo")
+
+        }
+
+    </script>
+</body>
+
+</html>
