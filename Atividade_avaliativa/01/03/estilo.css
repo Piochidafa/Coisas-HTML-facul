@@ -88,7 +88,6 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 25px;
-    margin-bottom: -30px;
     width: auto;
 }
 
@@ -96,7 +95,7 @@ body {
 .modalizin {
     display: block;
     align-items: center;
-    margin-top: 250px;
+    margin-top: 280px;
     font-size: x-large;
     padding: 10px;
     background-color: rgb(0, 128, 0);
@@ -114,6 +113,7 @@ body {
 hr {
     border: 0px;
     border-top: 1px solid lightgray;
+    color: black;
 }
 
 .modal-container {
@@ -132,12 +132,6 @@ hr {
     background-color: white;
     width: 35%;
     background-image: url(/Atividade_avaliativa/01/03/imgs/capa_modal.gif);
-}
-
-hr {
-
-    color: black;
-
 }
 
 .active {
@@ -172,4 +166,101 @@ span {
 
 .btnao {
     background-color: brown;
+}
+
+/* Menu retratil ================================*/
+
+#imgicon {
+
+    margin-top: 15px;
+    height: 40px;
+    background-image: url(/Atividade_avaliativa/01/03/imgs/fundomen.gif);
+    background-size: cover;
+}
+
+#check {
+
+    display: none;
+}
+
+#icon {
+
+
+    cursor: pointer;
+    padding: 15px;
+    padding-bottom: 0;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.barra {
+
+    background-color: rgba(0, 0, 0, 0.192);
+    height: 100%;
+    width: 160px;
+    position: absolute;
+    transition: all .3s linear;
+    left: -295px;
+
+}
+
+.navmen {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+@font-face {
+
+    font-family: mine;
+    src: url(/Atividade_avaliativa/01/fonte/Gloss_And_Bloom.ttf);
+
+
+}
+
+.link {
+    background-color: rgba(51, 49, 49, 0.438);
+    border-radius: 15px;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: mine;
+    transition: all .3s linear;
+    color: rgb(252, 252, 252);
+    border-bottom: 01px solid black;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+
+.link:hover {
+    background-color: rgba(7, 255, 61, 0.425);
+}
+
+#check:checked~.barra {
+    transform: translateX(295px);
+
+
+}
+
+#check:checked+label {
+
+    margin-left: 50px;
+    transition: all .1s linear;
+
+}
+
+#check:checked~.barra nav a .link {
+
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .1s;
+
 }
