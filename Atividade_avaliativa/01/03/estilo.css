@@ -264,3 +264,12 @@ a {
     transition-delay: .1s;
 
 }
+
+/*Audio*/
+
+.controles{
+    margin-top: 390px;
+    height: 40px;
+    width: 150px;
+    
+}
