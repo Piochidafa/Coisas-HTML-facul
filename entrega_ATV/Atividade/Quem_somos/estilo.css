@@ -1,0 +1,275 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+
+    background-image: url(/Atividade/Quem_somos/imgs/funfun.jpg);
+    background-size: cover;
+
+}
+
+.janelasnav {
+
+    width: 600px;
+    height: 100px;
+    margin: 100px auto;
+    background-color: transparent;
+    position: relative;
+    margin-top: -45px;
+
+
+}
+
+.janelasnav ul {
+
+    list-style: none;
+
+}
+
+.janelasnav ul li {
+    float: left;
+
+}
+
+.janelasnav label {
+
+    display: block;
+    width: 100px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.37);
+    cursor: pointer;
+    text-align: center;
+    color: antiquewhite;
+
+}
+
+.ler_janel:checked~label {
+
+    background-color: transparent;
+
+}
+
+.ler_janel {
+
+    display: none;
+
+}
+
+.conteudo {
+
+    border-top: 5px solid rgb(0, 128, 0);
+    background-color: transparent;
+    display: none;
+    position: absolute;
+    color: aliceblue;
+    height: 20px;
+    width: 600px;
+    left: 0;
+
+}
+
+.ler_janel:checked~.conteudo {
+
+    display: block;
+
+
+
+}
+
+#iconhome {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    width: auto;
+}
+
+
+.modalizin {
+    display: block;
+    align-items: center;
+    margin-top: 280px;
+    font-size: x-large;
+    padding: 10px;
+    background-color: rgb(0, 128, 0);
+    color: rgb(2, 2, 2);
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 15px;
+    width: 150px;
+    height: 35px;
+    font: italic;
+    border-radius: 20px;
+
+}
+
+hr {
+    border: 0px;
+    border-top: 1px solid lightgray;
+    color: black;
+}
+
+.modal-container {
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    width: 35%;
+    background-image: url(/Atividade/Quem_somos/imgs/capa_modal.gif);
+}
+
+.active {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+}
+
+span {
+    margin: 10px auto;
+    color: black;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.botoes button {
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btsim {
+    background-color: rgb(15, 4, 106);
+}
+
+.btnao {
+    background-color: brown;
+}
+
+/* Menu retratil ================================*/
+
+#imgicon {
+
+    margin-top: 15px;
+    height: 40px;
+    background-image: url(/Atividade/Quem_somos/imgs/fundomen.gif);
+    background-size: cover;
+}
+
+#check {
+
+    display: none;
+}
+
+#icon {
+
+
+    cursor: pointer;
+    padding: 15px;
+    padding-bottom: 0;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.barra {
+
+    background-color: rgba(0, 0, 0, 0.192);
+    height: 100%;
+    width: 160px;
+    position: absolute;
+    transition: all .3s linear;
+    left: -295px;
+
+}
+
+.navmen {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+@font-face {
+
+    font-family: mine;
+    src: url(/Atividade/Home/Assets/fonte/Gloss_And_Bloom.ttf);
+
+
+}
+
+.link {
+    background-color: rgba(51, 49, 49, 0.438);
+    border-radius: 15px;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: mine;
+    transition: all .3s linear;
+    color: rgb(252, 252, 252);
+    border-bottom: 01px solid black;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+
+.link:hover {
+    background-color: rgba(7, 255, 61, 0.425);
+}
+
+#check:checked~.barra {
+    transform: translateX(295px);
+
+
+}
+
+#check:checked+label {
+
+    margin-left: 50px;
+    transition: all .1s linear;
+
+}
+
+#check:checked~.barra nav a .link {
+
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .1s;
+
+}
+
+/*Audio*/
+
+.controles{
+    margin-top: 390px;
+    height: 40px;
+    width: 150px;
+    
+}
